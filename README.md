@@ -8,6 +8,7 @@ Stores and loads data from noSQL Firebase.
 
 ![Screenshot](https://i.imgur.com/ebfJCdt.jpg)
 
+Project created by : Mukul Shingwani and Modi Saurabh Mehul
 ### Installation
 ```
 git clone https://github.com/Mukulshingwani/medbuddy.git
