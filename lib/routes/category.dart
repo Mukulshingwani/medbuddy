@@ -40,12 +40,12 @@ class _CategoryPageState extends State<CategoryPage> {
             itemBuilder: (context, index) {
               return doctorCard(
                 context: context,
-                firstName: searchSnapshot.docs[index].data()["firstName"],
-                lastName: searchSnapshot.docs[index].data()["lastName"],
-                prefix: searchSnapshot.docs[index].data()["prefix"],
-                specialty: searchSnapshot.docs[index].data()["specialty"],
-                rank: searchSnapshot.docs[index].data()["rank"],
-                imagePath: searchSnapshot.docs[index].data()["imagePath"],
+                firstName: searchSnapshot.docs[index].get("firstName"),
+                lastName: searchSnapshot.docs[index].get("lastName"),
+                prefix: searchSnapshot.docs[index].get("prefix"),
+                specialty: searchSnapshot.docs[index].get("specialty"),
+                rank: searchSnapshot.docs[index].get("rank"),
+                imagePath: searchSnapshot.docs[index].get("imagePath"),
               );
             })
         : Container();
@@ -70,9 +70,9 @@ class _CategoryPageState extends State<CategoryPage> {
                 itemBuilder: (context, index) {
                   return specialtyCard(
                     specialtyName:
-                        specialtySnapshot.docs[index].data()["specialtyName"],
+                        specialtySnapshot.docs[index].get("specialtyName"),
                     specialtyDescription: specialtySnapshot.docs[index]
-                        .data()["specialtyDescription"],
+                        .get("specialtyDescription"),
                   );
                 }),
           )
@@ -133,15 +133,15 @@ class _CategoryPageState extends State<CategoryPage> {
                         return doctorCard(
                           context: context,
                           firstName:
-                              searchSnapshot.docs[index].data()["firstName"],
+                              searchSnapshot.docs[index].get("firstName"),
                           lastName:
-                              searchSnapshot.docs[index].data()["lastName"],
-                          prefix: searchSnapshot.docs[index].data()["prefix"],
+                              searchSnapshot.docs[index].get("lastName"),
+                          prefix: searchSnapshot.docs[index].get("prefix"),
                           specialty:
-                              searchSnapshot.docs[index].data()["specialty"],
-                          rank: searchSnapshot.docs[index].data()["rank"],
+                              searchSnapshot.docs[index].get("specialty"),
+                          rank: searchSnapshot.docs[index].get("rank"),
                           imagePath:
-                              searchSnapshot.docs[index].data()["imagePath"],
+                              searchSnapshot.docs[index].get("imagePath"),
                         );
                       })
                   : Container(

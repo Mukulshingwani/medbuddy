@@ -52,25 +52,25 @@ class _ProfilePageState extends State<ProfilePage> {
                 itemBuilder: (context, index) {
                   return doctorCard(
                     firstName:
-                        doctorProfileSnapshot.docs[index].data()["firstName"],
+                        doctorProfileSnapshot.docs[index].get("firstName"),
                     lastName:
-                        doctorProfileSnapshot.docs[index].data()["lastName"],
-                    prefix: doctorProfileSnapshot.docs[index].data()["prefix"],
+                        doctorProfileSnapshot.docs[index].get("lastName"),
+                    prefix: doctorProfileSnapshot.docs[index].get("prefix"),
                     specialty:
-                        doctorProfileSnapshot.docs[index].data()["specialty"],
+                        doctorProfileSnapshot.docs[index].get("specialty"),
                     imagePath:
-                        doctorProfileSnapshot.docs[index].data()["imagePath"],
-                    rank: doctorProfileSnapshot.docs[index].data()["rank"],
+                        doctorProfileSnapshot.docs[index].get("imagePath"),
+                    rank: doctorProfileSnapshot.docs[index].get("rank"),
                     medicalEducation: doctorProfileSnapshot.docs[index]
-                        .data()["medicalEducation"],
+                        .get("medicalEducation"),
                     residency:
-                        doctorProfileSnapshot.docs[index].data()["residency"],
+                        doctorProfileSnapshot.docs[index].get("residency"),
                     internship:
-                        doctorProfileSnapshot.docs[index].data()["internship"],
+                        doctorProfileSnapshot.docs[index].get("internship"),
                     fellowship:
-                        doctorProfileSnapshot.docs[index].data()["fellowship"],
+                        doctorProfileSnapshot.docs[index].get("fellowship"),
                     biography:
-                        doctorProfileSnapshot.docs[index].data()["biography"],
+                        doctorProfileSnapshot.docs[index].get("biography"),
                   );
                 }),
           )

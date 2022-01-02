@@ -43,7 +43,7 @@ class _MyHealthPageState extends State<MyHealthPage> {
       print('here');
       setState(() {
         UserProfile.userHealthScore =
-            userProfileSnapshot.docs[0].data()["userHealthScore"].toDouble();
+            userProfileSnapshot.docs[0].get("userHealthScore").toDouble();
       });
     });
   }
@@ -57,30 +57,30 @@ class _MyHealthPageState extends State<MyHealthPage> {
                 physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) {
                   return userProfileCard(
-                    name: userProfileSnapshot.docs[index].data()["name"],
+                    name: userProfileSnapshot.docs[index].get("name"),
                     imagePath:
-                        userProfileSnapshot.docs[index].data()["imagePath"],
-                    age: userProfileSnapshot.docs[index].data()["age"],
-                    dob: userProfileSnapshot.docs[index].data()["dob"],
+                        userProfileSnapshot.docs[index].get("imagePath"),
+                    age: userProfileSnapshot.docs[index].get("age"),
+                    dob: userProfileSnapshot.docs[index].get("dob"),
                     firstName:
-                        userProfileSnapshot.docs[index].data()["firstName"],
+                        userProfileSnapshot.docs[index].get("firstName"),
                     lastName:
-                        userProfileSnapshot.docs[index].data()["lastName"],
-                    gender: userProfileSnapshot.docs[index].data()["gender"],
+                        userProfileSnapshot.docs[index].get("lastName"),
+                    gender: userProfileSnapshot.docs[index].get("gender"),
                     language:
-                        userProfileSnapshot.docs[index].data()["language"],
-                    bmi: userProfileSnapshot.docs[index].data()["bmi"],
+                        userProfileSnapshot.docs[index].get("language"),
+                    bmi: userProfileSnapshot.docs[index].get("bmi"),
                     userHealthScore: (userProfileSnapshot.docs[index]
-                            .data()["userHealthScore"])
+                            .get("userHealthScore"))
                         .toDouble(),
                     heightFeet:
-                        userProfileSnapshot.docs[index].data()["heightFeet"],
+                        userProfileSnapshot.docs[index].get("heightFeet"),
                     heightInch:
-                        userProfileSnapshot.docs[index].data()["heightInch"],
-                    weight: userProfileSnapshot.docs[index].data()["weight"],
-                    email: userProfileSnapshot.docs[index].data()["email"],
-                    address: userProfileSnapshot.docs[index].data()["address"],
-                    phone: userProfileSnapshot.docs[index].data()["phone"],
+                        userProfileSnapshot.docs[index].get("heightInch"),
+                    weight: userProfileSnapshot.docs[index].get("weight"),
+                    email: userProfileSnapshot.docs[index].get("email"),
+                    address: userProfileSnapshot.docs[index].get("address"),
+                    phone: userProfileSnapshot.docs[index].get("phone"),
                   );
                 }),
           )

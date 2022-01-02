@@ -1,3 +1,5 @@
+
+import 'package:animated_flip_counter/animated_flip_counter.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_medical/main.dart';
@@ -12,7 +14,7 @@ import 'package:flutter_medical/services/authenticate.dart';
 import 'package:flutter_medical/services/authentication.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:animated_flip_counter/animated_flip_counter.dart';
+import 'package:animated_counter/animated_counter.dart';
 
 DocumentSnapshot snapshot;
 
@@ -118,11 +120,11 @@ class _GlobalDrawerState extends State<GlobalDrawer> {
                 itemBuilder: (context, index) {
                   return specialtyDrawerItem(
                     specialtyName:
-                        specialtySnapshot.docs[index].data()["specialtyName"],
+                        specialtySnapshot.docs[index].get("specialtyName"),
                     specialtyDoctorCount: specialtySnapshot.docs[index]
-                        .data()["specialtyDoctorCount"],
+                        .get("specialtyDoctorCount"),
                     specialtyImagePath: specialtySnapshot.docs[index]
-                        .data()["specialtyImagePath"],
+                        .get("specialtyImagePath"),
                   );
                 },
               ),

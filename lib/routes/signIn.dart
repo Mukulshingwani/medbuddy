@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_medical/routes/home.dart';
@@ -38,9 +39,11 @@ class _SignInPageState extends State<SignInPage> with TickerProviderStateMixin {
               .getUserInfo(emailTextEditingController.text);
           CheckSharedPreferences.saveUserLoggedInSharedPreference(true);
           CheckSharedPreferences.saveNameSharedPreference(
-              userInfoSnapshot.docs[0].data()["name"]);
+              userInfoSnapshot.docs[0].get("name"));
           CheckSharedPreferences.saveUserEmailSharedPreference(
-              userInfoSnapshot.docs[0].data()["email"]);
+              userInfoSnapshot.docs[0].get("email"));
+
+          print("done");
 
           Navigator.pushReplacement(
             context,

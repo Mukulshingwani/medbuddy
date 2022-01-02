@@ -25,8 +25,6 @@ class _SignUpPageState extends State<SignUpPage> {
   final formKey = GlobalKey<FormState>();
   TextEditingController userNameTextEditingController =
       new TextEditingController();
-  TextEditingController userNameLowercaseTextEditingController =
-      new TextEditingController();
   TextEditingController emailTextEditingController =
       new TextEditingController();
   TextEditingController passwordTextEditingController =
@@ -162,6 +160,46 @@ class _SignUpPageState extends State<SignUpPage> {
                                         borderSide: BorderSide(
                                             color:
                                                 Theme.of(context).primaryColor),
+                                        borderRadius: BorderRadius.circular(60),
+                                      ),
+                                      filled: true,
+                                      fillColor: Colors.black.withOpacity(0.05),
+                                      contentPadding: EdgeInsets.symmetric(
+                                        vertical: 20.0,
+                                        horizontal: 25.0,
+                                      ),
+                                      prefixIcon: Icon(
+                                        Icons.alternate_email,
+                                        color: Color(0xFF6aa6f8),
+                                      ),
+                                      //
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  margin: const EdgeInsets.all(20.0),
+                                  child: TextFormField(
+                                    keyboardType: TextInputType.visiblePassword,
+                                    validator: (val) {
+                                      return val.length > 6
+                                          ? null
+                                          : "Please enter a name";
+                                    },
+                                    controller: userNameTextEditingController,
+                                    textCapitalization: TextCapitalization.none,
+                                    decoration: InputDecoration(
+                                      hintText: 'Mukul Shingwani',
+                                      hintStyle: TextStyle(
+                                        color: Color(0xFFb1b2c4),
+                                      ),
+                                      border: new OutlineInputBorder(
+                                        borderSide: BorderSide.none,
+                                        borderRadius: BorderRadius.circular(60),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                            color:
+                                            Theme.of(context).primaryColor),
                                         borderRadius: BorderRadius.circular(60),
                                       ),
                                       filled: true,

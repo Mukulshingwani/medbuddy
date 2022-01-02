@@ -106,9 +106,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return userProfileSnapshot != null
         ? Container(
             child: userHeader(
-              firstName: userProfileSnapshot.docs[0].data()["firstName"],
-              imagePath: userProfileSnapshot.docs[0].data()["imagePath"],
-              email: userProfileSnapshot.docs[0].data()["email"],
+              firstName: userProfileSnapshot.docs[0].get("firstName"),
+              imagePath: userProfileSnapshot.docs[0].get("imagePath"),
+              email: userProfileSnapshot.docs[0].get("email"),
             ),
           )
         : Container(
@@ -227,12 +227,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) {
                   return doctorCard(
-                    firstName: doctorSnapshot.docs[index].data()["firstName"],
-                    lastName: doctorSnapshot.docs[index].data()["lastName"],
-                    prefix: doctorSnapshot.docs[index].data()["prefix"],
-                    specialty: doctorSnapshot.docs[index].data()["specialty"],
-                    imagePath: doctorSnapshot.docs[index].data()["imagePath"],
-                    rank: doctorSnapshot.docs[index].data()["rank"],
+                    firstName: doctorSnapshot.docs[index].get("firstName"),
+                    lastName: doctorSnapshot.docs[index].get("lastName"),
+                    prefix: doctorSnapshot.docs[index].get("prefix"),
+                    specialty: doctorSnapshot.docs[index].get("specialty"),
+                    imagePath: doctorSnapshot.docs[index].get("imagePath"),
+                    rank: doctorSnapshot.docs[index].get("rank"),
                   );
                 }),
           )
@@ -260,11 +260,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemBuilder: (context, index) {
                   return specialtyCard(
                     specialtyName:
-                        specialtySnapshot.docs[index].data()["specialtyName"],
+                        specialtySnapshot.docs[index].get("specialtyName"),
                     specialtyDoctorCount: specialtySnapshot.docs[index]
-                        .data()["specialtyDoctorCount"],
+                        .get("specialtyDoctorCount"),
                     specialtyImagePath: specialtySnapshot.docs[index]
-                        .data()["specialtyImagePath"],
+                        .get("specialtyImagePath"),
                   );
                 }),
           )
@@ -374,6 +374,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     getUserInfo();
     getSpecialties();
+    getDoctors();
     paginateDoctors();
     super.initState();
   }
@@ -383,8 +384,8 @@ class _HomeScreenState extends State<HomeScreen> {
         await CheckSharedPreferences.getUserEmailSharedPreference();
     databaseMethods.getUserProfile(UserProfile.userEmail).then((val) {
       setState(() {
-        UserProfile.userFirstName = val.docs[0].data()["firstName"];
-        UserProfile.userImagePath = val.docs[0].data()["imagePath"];
+        UserProfile.userFirstName = val.docs[0].get("name");
+        UserProfile.userImagePath = val.docs[0].get("imagePath");
         userProfileSnapshot = val;
       });
     });
@@ -597,6 +598,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ),
+
                     Container(
                       margin: const EdgeInsets.only(
                         bottom: 20.0,
@@ -616,17 +618,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                     return doctorCard(
                                       context: context,
                                       firstName: doctorSnapshot.docs[index]
-                                          .data()["firstName"],
+                                          .get("firstName"),
                                       lastName: doctorSnapshot.docs[index]
-                                          .data()["lastName"],
+                                          .get("lastName"),
                                       prefix: doctorSnapshot.docs[index]
-                                          .data()["prefix"],
+                                          .get("prefix"),
                                       specialty: doctorSnapshot.docs[index]
-                                          .data()["specialty"],
+                                          .get("specialty"),
                                       imagePath: doctorSnapshot.docs[index]
-                                          .data()["imagePath"],
+                                          .get("imagePath"),
                                       rank: doctorSnapshot.docs[index]
-                                          .data()["rank"],
+                                          .get("rank"),
                                     );
                                   },
                                 ),
