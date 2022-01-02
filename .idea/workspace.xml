@@ -30,29 +30,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdeea7bd-4e60-4b97-87ca-81995acedbf3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/flutter_medical_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/flutter_medical_android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_medical.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_medical.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/category.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/category.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/myHealth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/myHealth.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/profile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/search.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/search.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/signIn.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/signIn.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/signUp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/signUp.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="fdeea7bd-4e60-4b97-87ca-81995acedbf3" name="Default Changelist" comment="medbuddy_initial_commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +91,14 @@
       <option name="presentableId" value="Default" />
       <updated>1599011261417</updated>
     </task>
+    <task id="LOCAL-00001" summary="medbuddy_initial_commit">
+      <created>1641107172874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641107172874</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +112,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="medbuddy_initial_commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="medbuddy_initial_commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
