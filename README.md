@@ -23,6 +23,7 @@ flutter run
 <img height="480px" src="https://github.com/Mukulshingwani/medbuddy/blob/9b063b010058ed3b7c1a7c5f32b4dd54e46e5c3b/assets/images/118353435-ca0b1800-b583-11eb-9186-970def982a23.png">
 
 ## Features
+- Doctors Categorization on basis of the body issues.
 - Contact information of the doctor.
 - See all the Availabe time slots of doctor.
 - Book and cancel an appointment with preferred time slots from anywhere.
