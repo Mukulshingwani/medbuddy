@@ -21,6 +21,8 @@ flutter run
 ### Some Screenshots
 
 <img height="480px" src="https://github.com/Mukulshingwani/medbuddy/blob/9b063b010058ed3b7c1a7c5f32b4dd54e46e5c3b/assets/images/118353435-ca0b1800-b583-11eb-9186-970def982a23.png">
+<img height="480px" src="https://github.com/Mukulshingwani/medbuddy/blob/3f243ceecb62fdfccd8d0f4642ddb97430be3b32/assets/images/WhatsApp%20Image%202022-04-12%20at%201.39.39%20PM%20(1).jpeg">
+<img height="480px" src="https://github.com/Mukulshingwani/medbuddy/blob/3f243ceecb62fdfccd8d0f4642ddb97430be3b32/assets/images/WhatsApp%20Image%202022-04-12%20at%201.40.15%20PM%20(1).jpeg">
 
 ## Features
 - Doctors Categorization on basis of the body issues.
