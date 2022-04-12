@@ -17,3 +17,10 @@ flutter pub get
 
 flutter run
 ```
+
+### TO-DO
+
+- [x] Create Profile page
+- [ ] MyHealth edit profile details
+- [ ] Fix Top Doctors "view more"
+- [ ] Firebase Storage for user profile images and office gallery photos
