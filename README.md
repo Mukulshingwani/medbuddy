@@ -45,14 +45,6 @@ To build the project, ensure that you have a recent version of the Flutter SDK i
 - Clone or download
 - Build and Run
 
-# Pull Requests
-
-We welcome and encourage all pull requests. It usually will takes within 24-48 hours to respond to any issue or request. Here are some basic rules to follow to ensure timely addition of your request:
-
-1.  Match the document style as closely as possible.
-2.  Please keep PR titles easy to read and descriptive of changes, this will make them easier to merge :)
-3.  Pull requests _must_ be made against `master` branch for this particular repository.
-4.  Make sure you follow the set standard as all other projects in this repo do
 
 
 
